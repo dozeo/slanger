@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency                'eventmachine',     '~> 0.12.10'
   s.add_dependency                'em-hiredis',       '~> 0.1.0'
-  s.add_dependency                'em-websocket',     '~> 0.3.5'
+  s.add_dependency                'em-websocket',     '~> 0.4.0'
   s.add_dependency                'rack',             '~> 1.3'
   s.add_dependency                'rack-fiber_pool',  '0.9.1'
   s.add_dependency                'signature',        '~> 0.1.6'
