@@ -12,7 +12,7 @@ module Slanger
     attr_accessor :connection
     delegate :error, :send_payload, to: :connection
 
-    def initialize(socket)
+    def initialize(socket, hs)
       @socket        = socket
       @connection    = Connection.new(@socket)
       @subscriptions = {}
