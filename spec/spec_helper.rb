@@ -23,7 +23,10 @@ def errback
 end
 
 RSpec.configure do |config|
+  config.formatter = 'documentation'
+  config.color = true
   config.mock_framework = :mocha
+  config.order = 'random'
   config.include SlangerHelperMethods
   config.fail_fast = true
   config.after(:each) { stop_slanger if @server_pid }
